@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import { View, Text, ActivityIndicator } from 'react-native';
 
-const SplashScreen = () => {
+
+export default  SplashScreen=()=> {
+  
   return (
- <React.Fragment></React.Fragment>
-  )
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>MyChat</Text>
+      <ActivityIndicator size="large" color="#00f" />
+    </View>
+  );
 }
-
-export default SplashScreen
